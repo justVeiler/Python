@@ -28,8 +28,5 @@
 #
 #     print (str(divisionResult) + result)
 
-inputNumber = int(input())
-while inputNumber > 3:
-    print ("chiu")
-print ("deo hieu")
+
 
