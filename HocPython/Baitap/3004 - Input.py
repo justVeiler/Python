@@ -11,4 +11,23 @@
 # print(maxName)
 # print(maxAge)
 
-#
+# Bai tap nhap ten tuoi & so sanh dung List
+
+
+inputName = ""
+inputAge = ""
+
+listLength = 3
+
+listAges = [0] * listLength
+listNames = [''] * listLength
+
+for i in range(listLength):
+    inputName1 = str(input("Hay nhap ten nguoi thu {}: ".format(i + 1)))
+    inputAge1 = int(input("Hay nhap ten nguoi do: "))
+    listAges[i] = inputAge1
+    listNames[i] = inputName1
+
+theOldest = max(listAges)
+position = listAges.index(max(listAges))
+print(position)
