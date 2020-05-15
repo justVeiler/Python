@@ -37,6 +37,8 @@ print("Nguoi thu {} la nguoi nhieu tuoi nhat".format(position))
 # Bai tap phan chuoi :
 import re
 import sys
+import string
+import decimal
 
 my_List = str(input("Hay nhap 1 chuoi ky tu ma ban thich: "))
 
@@ -87,7 +89,15 @@ remove_whitespace_left = my_List.lstrip()
 the_perfect_space = re.sub("\s\s+", " ",my_List)
 print(the_perfect_space)
 
-'''convert_characters_to_ascii'''
+'''convert_characters_to_ascii_and_calculate_the_average'''
+print("Chuoi day du cua ban la:" + str(my_List))
+result = []
+total = 0
+for char in my_List:
+    result.extend(ord(num) for num in char)
+    print("result la {}".format(result))
+    print("char la {}".format(char))
+    print("Gia tri Trung binh cong cua chuoi sau khi convert sang ASCII la:" + str(sum(result)/len(my_List)))
 
 
 
