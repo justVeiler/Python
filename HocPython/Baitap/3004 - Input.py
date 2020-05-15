@@ -97,7 +97,7 @@ for char in my_List:
     result.extend(ord(num) for num in char)
     print("result la {}".format(result))
     print("char la {}".format(char))
-    print("Gia tri Trung binh cong cua chuoi sau khi convert sang ASCII la:" + str(sum(result)/len(my_List)))
+    print("Gia tri Trung binh cong cua chuoi sau khi convert sang ASCII la: " + str(sum(result)/len(my_List)))
 
 
 
