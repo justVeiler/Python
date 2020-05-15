@@ -87,6 +87,7 @@ remove_whitespace_left = my_List.lstrip()
 the_perfect_space = re.sub("\s\s+", " ",my_List)
 print(the_perfect_space)
 
+'''convert_characters_to_ascii'''
 
 
 
